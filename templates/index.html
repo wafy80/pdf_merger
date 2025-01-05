@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="it">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Unione di File PDF</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Unione di File PDF</h1>
+        <form method="post" action="/" enctype="multipart/form-data">
+            <input type="file" name="files" multiple required accept=".pdf">
+            <button type="submit">Unisci PDF</button>
+        </form>
+    </div>
+</body>
+</html>
